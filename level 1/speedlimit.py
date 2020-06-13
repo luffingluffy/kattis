@@ -17,3 +17,17 @@ while n != -1:
     s.clear()
     t.clear()
     n = int(input())
+
+# better way to solve
+ 
+n = int(input())
+
+while n != -1:
+    distance = 0
+    time_elapsed = 0
+    for x in range(n):
+        s, t = map(int, input().split())
+        distance += s * (t - time_elapsed)
+        time_elapsed = t
+    print(str(distance) + " miles")
+    n = int(input())
