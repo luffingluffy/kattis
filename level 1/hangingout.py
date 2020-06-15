@@ -6,7 +6,7 @@ for i in range(x):
     z = input().split()
     # no. of times a group is denied entry
     if z[0] == "enter":
-        if (n + int(z[1]) > l):
+        if n + int(z[1]) > l:
             d += 1
         # no. of people entering that wasn't denied
         else:
