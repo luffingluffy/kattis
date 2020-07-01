@@ -1,3 +1,29 @@
+n, b = input().split()
+
+value = {
+	
+	'A': (11, 11),
+	'K': (4, 4),
+	'Q': (3, 3),
+	'J': (20, 2),
+	'T': (10, 10),
+	'9': (14, 0),
+	'8': (0, 0),
+	'7': (0,0)
+
+}
+
+score = 0
+
+for i in range(4 * int(n)):
+	card = input()
+	if card[1] == b:
+		score += value[(card[0])][0]
+	else:
+		score += value[(card[0])][1]
+
+print(score)
+
 # worst program ive wrote so far.. it is a literal manually-coded brute force program
 # i'll need to revisit this to make it better
 
